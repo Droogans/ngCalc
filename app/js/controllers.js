@@ -2,9 +2,9 @@
 
 /* Controllers */
 
-angular.module('gdCalc.controllers', ['gdCalc.directives']).
-controller('gdCalcCtrl', function ($scope) {
-    $scope.screen = '0';
+angular.module('gdCalc.controllers', ['gdCalc.directives', 'gdCalc.services']).
+controller('gdCalcCtrl', function ($scope, DefaultScreen) {
+    $scope.screen = DefaultScreen.value;
     $scope.buttonRows = [
         ['C', '+', '-'],
         ['7', '8', '9'],
@@ -15,7 +15,7 @@ controller('gdCalcCtrl', function ($scope) {
     $scope.problem = '';
     $scope.input = function (button) {
         if (button === 'C') {
-            $scope.problem = '';
+            $scope.problem = DefaultScreen.value;
             button = '';
         }
         if (button === '=') {
