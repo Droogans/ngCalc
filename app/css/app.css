@@ -1,0 +1,48 @@
+.calc-body {
+    min-width: 300px;
+}
+
+.calc-button-area {
+    min-width: 300px;
+    background-color: #eee;
+    margin: 0 auto 0 auto;
+    width: 25%;
+    border: solid 1px black;
+}
+
+.calc-screen {
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto 0 auto;
+}
+
+.calc-screen input {
+    width: 100%;
+    font-size: 3em;
+    text-align: right;
+    height: 2em;
+}
+
+button {
+    padding: 9%;
+    margin-right: 1%;
+    width: 30%;
+    font-size: 2em;
+    background-color: #fff    
+}
+
+button:active {
+    background-color: #eee;
+}
+
+/* stolen from interwebs */
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
